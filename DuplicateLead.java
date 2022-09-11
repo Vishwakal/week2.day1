@@ -29,7 +29,7 @@ public class DuplicateLead {
 		driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("vishwakala97@gmail.com");
 	    WebElement drobdown=	driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
         Select dd= new Select(drobdown);
-        dd.selectByValue("NY");
+        dd.selectByVisibleText("New York");
 		driver.findElement(By.className("smallSubmit")).click();
 		driver.findElement(By.linkText("Duplicate Lead")).click();
 	    driver.findElement(By.id("createLeadForm_companyName")).clear();
