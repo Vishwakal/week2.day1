@@ -29,7 +29,7 @@ public class AssiggmentCreateLead {
 		driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("vishwakala97@gmail.com");
 	    WebElement drobdown=	driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
         Select dd= new Select(drobdown);
-        dd.selectByValue("NY");
+        dd.selectByVisibleText("New York");
 		driver.findElement(By.className("smallSubmit")).click();
 		System.out.println("Page title is : " + driver.getTitle());
 		driver.close();
